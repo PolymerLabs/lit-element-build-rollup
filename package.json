@@ -1,16 +1,16 @@
 {
-  "name": "rollup-test",
+  "name": "lit-element-build-rollup",
   "version": "1.0.0",
-  "description": "learning to use rollup",
+  "description": "Build config for lit-element with Babel and Rollup",
   "main": "index.js",
-  "repository": "katejeffreys/rollup-test",
+  "repository": "PolymerLabs/lit-element-build-rollup",
   "scripts": {
     "copyindex": "cp src/index.html build",
     "copywc": "cp -r node_modules/@webcomponents/webcomponentsjs/bundles build && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js build",
     "build": "rm -rf build && mkdir build && npm run copyindex && npm run copywc && rollup -c",
     "start": "serve build"
   },
-  "author": "katejeffreys@google.com",
+  "author": "The Polymer Authors",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@babel/core": "^7.2.2",

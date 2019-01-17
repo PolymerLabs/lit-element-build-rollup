@@ -1,11 +1,9 @@
-# rollup-test
+# lit-element-build-rollup
 
-A basic build config for lit-element.
-
-Uses Babel to transpile class properties and decorators, and Rollup to resolve npm-style imports.
+A basic build config for lit-element. Uses Babel to transpile class properties and decorators, and Rollup to resolve npm-style imports.
 
 ```
-git clone https://github.com/katejeffreys/rollup-test.git
+git clone https://github.com/PolymerLabs/lit-element-build-rollup.git
 cd rollup-test
 npm install
 npm run build
