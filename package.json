@@ -1,0 +1,21 @@
+{
+  "name": "rollup-test",
+  "version": "1.0.0",
+  "description": "learning to use rollup",
+  "main": "index.js",
+  "repository": {},
+  "scripts": {
+    "build": "rm -rf build && mkdir build && cp index.html build && rollup -c",
+    "start": "serve build"
+  },
+  "author": "katejeffreys@google.com",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "serve": "^10.1.1"
+  },
+  "dependencies": {
+    "lit-html": "^1.0.0-rc.2"
+  }
+}
