@@ -4,7 +4,7 @@ A basic build config for lit-element. Uses Babel to transpile class properties a
 
 ```
 git clone https://github.com/PolymerLabs/lit-element-build-rollup.git
-cd rollup-test
+cd lit-element-build-rollup
 npm install
 npm run build
 npm run start
