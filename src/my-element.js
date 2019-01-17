@@ -1,9 +1,10 @@
 import {myTemplate} from './myTemplate';
-import {LitElement} from 'lit-element';
+import {html, LitElement, property} from 'lit-element';
 
 class MyElement extends LitElement {
+  @property({type: String}) myProp = 'stuff';
   render() {
-    return myTemplate;
+    return html`${myTemplate} <br/> ${this.stuff}`;
   }
 }
 

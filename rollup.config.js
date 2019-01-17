@@ -1,4 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
+import babel from 'rollup-plugin-babel';
 
 export default {
 	input: 'src/index.js',
@@ -8,6 +9,10 @@ export default {
 		sourcemap: true
 	},
 	plugins: [
-		resolve()
+    resolve(),
+    babel({ plugins: [
+      '@babel/plugin-proposal-class-properties',
+      ['@babel/proposal-decorators', { decoratorsBeforeExport: true } ]
+    ] })
 	]
 };
