@@ -5,7 +5,7 @@ class MyElement extends LitElement {
   render() {
     return html`
       <p>Hello World</p>
-      ${this.stuff}
+      ${this.myProp}
     `;
   }
 }
