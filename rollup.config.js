@@ -10,9 +10,6 @@ export default {
 	},
 	plugins: [
     resolve(),
-    babel({ plugins: [
-      '@babel/plugin-proposal-class-properties',
-      ['@babel/proposal-decorators', { decoratorsBeforeExport: true } ]
-    ] })
+    babel()
 	]
 };
