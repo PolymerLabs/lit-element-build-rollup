@@ -4,9 +4,19 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width'>
   <title>rollup-test</title>
+  <!-- Force polyfills for testing -->
+  <!-- 
+  <script>
+    window.ShadyDOM = {
+      force: true
+    };
+    if (window.customElements) customElements.forcePolyfill = true;
+  </script>
+  -->
   <script src='index.js'></script>
 </head>
 <body>
   <my-element></my-element>
+  <script src="webcomponents-loader.js"></script>
 </body>
 </html>
