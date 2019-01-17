@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {},
   "scripts": {
-    "build": "rm -rf build && mkdir build && cp index.html build && rollup -c",
+    "build": "rm -rf build && mkdir build && cp src/index.html build && rollup -c",
     "start": "serve build"
   },
   "author": "katejeffreys@google.com",
